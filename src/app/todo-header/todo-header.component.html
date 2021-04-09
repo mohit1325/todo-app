@@ -1,0 +1,13 @@
+<div class="header">
+    <div class="header-img">
+        <img [src]="theme==='dark'? '../assets/images/bg-desktop-dark.jpg': '../assets/images/bg-desktop-light.jpg'"
+            class="img-header">
+    </div>
+    <div class="header--flex">
+        <label class="label--header">TODO</label>
+        <div class="item--flex" (click)="changeTheme()">
+            <img class="img--switch img-fluid"
+                [src]="theme==='dark'?'../assets/images/icon-sun.svg':'../assets/images/icon-moon.svg'">
+        </div>
+    </div>
+</div>
